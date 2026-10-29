@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Illustration: Pulskurve, Fingerclip-Sensor und Übergabe an eine Praxissoftware">
+  <!-- Sensor-Clip -->
+  <rect x="22" y="78" width="70" height="44" rx="20" fill="#c9a27e" stroke="#7a5233" stroke-width="2"/>
+  <path d="M30 92 q26 6 54 0" stroke="#b18a64" stroke-width="1.5" fill="none"/>
+  <circle cx="74" cy="100" r="6" fill="#7b64b4"/>
+  <path d="M92 100 C110 100 108 140 132 140" stroke="#7a5233" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Pulskurve auf Papier -->
+  <rect x="112" y="30" width="122" height="90" rx="10" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <path d="M112 90 H234" stroke="#e3d8c8" stroke-width="1.5"/>
+  <path d="M120 96 C128 96 130 52 138 52 C146 52 150 82 156 80 C160 79 162 74 166 77 C174 84 180 96 188 96 C196 96 198 52 206 52 C214 52 218 82 224 80 C226 79 228 76 230 78"
+        stroke="#7b64b4" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Herz -->
+  <path d="M168 168 c-18 -12 -26 -22 -26 -32 a12 12 0 0 1 26 -6 a12 12 0 0 1 26 6 c0 10 -8 20 -26 32z" fill="#cdbfea" stroke="#7b64b4" stroke-width="2"/>
+  <!-- Übergabe an Praxissoftware (GDT) -->
+  <path d="M234 76 H252" stroke="#55684a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M248 70 l8 6 -8 6" stroke="#55684a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="258" y="44" width="48" height="66" rx="8" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <rect x="266" y="56" width="32" height="6" rx="3" fill="#55684a"/>
+  <rect x="266" y="70" width="28" height="4" rx="2" fill="#d9cdbd"/><rect x="266" y="80" width="32" height="4" rx="2" fill="#d9cdbd"/><rect x="266" y="90" width="22" height="4" rx="2" fill="#d9cdbd"/>
+  <text x="282" y="128" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#7a5233">GDT</text>
+</svg>

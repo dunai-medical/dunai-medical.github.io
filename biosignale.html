@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biosignale auswerten und Geräte anbinden – Dunai-Medical</title>
+<meta name="description" content="Ich werte Biosignale aus, prüfe Algorithmen gegen Referenzdaten und gebe Ergebnisse über die GDT-Schnittstelle an Praxissoftware weiter.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="26" height="26">Dunai-Medical</a>
+    <nav class="nav" aria-label="Hauptnavigation"><a href="index.html#themen" aria-current="page">Themen</a><a href="ueber-mich.html">Über mich</a><a href="index.html#kontakt">Kontakt</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap narrow">
+  <a class="back" href="index.html#themen">Zurück zu allen Themen</a>
+</div>
+<div class="wrap">
+  <div class="topic-hero">
+    <div>
+      <span class="status done">Beleg: biosignal-gdt</span>
+      <h1 style="margin-top:.6rem">Biosignale auswerten und Geräte anbinden</h1>
+      <p class="lead">Ich werte Biosignale aus, prüfe Algorithmen gegen Referenzdaten und gebe Ergebnisse über die GDT-Schnittstelle an Praxissoftware weiter.</p>
+    </div>
+    <div class="art"><img src="img/biosignale.svg" alt="" width="320" height="200"></div>
+  </div>
+</div>
+<div class="wrap narrow">
+  <section class="block">
+    <h2>Erkennen Sie sich wieder?</h2>
+    <ul class="signs"><li>Ihr Prototyp misst, aber Sie wissen nicht genau, wie gut.</li><li>Es fehlt eine saubere Auswertung gegen eine Referenz.</li><li>Messwerte sollen automatisch in die Praxissoftware.</li><li>Sonderfälle wie schwache Signale führen zu falschen Werten.</li></ul>
+  </section>
+
+  <section class="block">
+    <h2>Ein Beispiel</h2>
+    <div class="scenario">
+      <span class="tag">Fiktives Szenario zur Veranschaulichung</span>
+      <h3>Die Ausgangslage</h3><p>Ein Start-up hat einen Sensor, der den Puls misst. Vor Gesprächen mit Investoren will es wissen, wie genau die Pulsfrequenz im Vergleich zu einer Referenz ist.</p>
+      <h3>Was ich tue</h3><p>Ich werte Aufnahmen gegen eine Referenz aus, berechne Abweichungen getrennt nach Signalqualität und zeige, in welchen Situationen der Algorithmus Fehler macht.</p>
+      <h3>Das Ergebnis</h3><p style="margin:0">Das Start-up kennt die Genauigkeit seines Algorithmus und weiß, wo es nachbessern muss.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Meine Rolle</h2>
+    <p>Genau das habe ich in meinem Projekt biosignal-gdt gemacht. Ergebnis siehe unten.</p>
+    <div class="split">
+      <div class="box"><h3>Das übernehme ich</h3><ul><li>Signalverarbeitung und Auswertung</li><li>Validierung gegen Referenzdaten</li><li>GDT-Export und Dokumentation</li></ul></div>
+      <div class="box yours"><h3>Das bleibt bei Ihnen</h3><ul><li>Medizinische Bewertung und Zweckbestimmung</li><li>Einordnung als Medizinprodukt</li><li>Klinische Studien</li></ul></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>So gehe ich vor</h2>
+    <ol class="steps"><li>Gespräch: Signal, Referenz, Fragestellung.</li><li>Sie stellen Aufnahmen bereit, oder ich nutze öffentliche Datensätze mit passender Lizenz.</li><li>Auswertung mit Kennzahlen und Grafiken, getrennt nach Signalqualität.</li><li>Bericht mit Ergebnissen und Grenzen.</li><li>Optional: Ausgabe über die GDT-Schnittstelle.</li></ol>
+  </section>
+
+    <section class="block">
+      <h2>Projekt: biosignal-gdt</h2>
+      <p>Pulsanalyse aus einem Pulssignal mit Ausgabe über die GDT-Schnittstelle, entwickelt mit Claude Code. Geprüft an 53 echten Aufnahmen aus dem öffentlichen BIDMC-Datensatz (PhysioNet), verglichen mit der EKG-Herzfrequenz des Monitors.</p>
+      <p>Bei guter Signalqualität:</p>
+      <div class="figures">
+        <div><strong>1,1&nbsp;/min</strong><span>mittlere Abweichung</span></div>
+        <div><strong>97&nbsp;%</strong><span>innerhalb ±5&nbsp;/min</span></div>
+      </div>
+      <p>Zwei Schwächen habe ich dabei gefunden und behoben: eine halbierte Frequenz bei wechselnder Pulsamplitude und übersehene Schläge (gelöst über den Median).</p>
+      <p class="note">Grenzen: Die Werte gelten für Aufnahmen mit guter Signalqualität. Demonstration, kein Medizinprodukt; nicht für Diagnose oder Therapie.</p>
+      <p><a href="https://github.com/Aronarii/biosignal-gdt">Code und Dokumentation auf GitHub</a></p>
+    </section>
+  <section class="block">
+    <div class="cta">
+      <p>Klingt das nach Ihrer Situation? Schreiben Sie mir kurz, worum es geht. Für kleine Projekte bin ich ab 2027 verfügbar.</p>
+      <a class="btn primary" href="mailto:dkaron50@gmail.com?subject=Anfrage:%20Biosignale%20auswerten%20und%20Geräte%20anbinden">E-Mail schreiben</a>
+    </div>
+  </section>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    <p>Dunai-Medical ist das persönliche Portfolio von Aron Dunai-Kovács. Keine medizinischen Leistungen, keine Medizinprodukte. Alle gezeigten Projekte sind Demonstrationen.</p>
+  </div>
+</footer>
+</body>
+</html>

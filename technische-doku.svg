@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Illustration: Ordner mit mehreren Dokumenten, gleiche Angaben werden abgeglichen">
+  <!-- Ordner -->
+  <path d="M24 60 h52 l12 12 h92 a10 10 0 0 1 10 10 v86 a10 10 0 0 1 -10 10 h-146 a10 10 0 0 1 -10 -10 z" fill="#c9a27e" stroke="#7a5233" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M34 96 q70 8 146 0 M34 132 q60 -6 146 4" stroke="#b18a64" stroke-width="1.5" fill="none"/>
+  <!-- Dokumente gefächert -->
+  <g transform="rotate(-8 120 100)"><rect x="64" y="34" width="70" height="96" rx="6" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+    <rect x="74" y="48" width="40" height="5" rx="2.5" fill="#d9cdbd"/><rect x="74" y="60" width="50" height="5" rx="2.5" fill="#d9cdbd"/>
+    <rect x="74" y="74" width="34" height="8" rx="4" fill="#cdbfea"/></g>
+  <rect x="112" y="30" width="70" height="96" rx="6" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <rect x="122" y="44" width="44" height="5" rx="2.5" fill="#d9cdbd"/><rect x="122" y="56" width="50" height="5" rx="2.5" fill="#d9cdbd"/>
+  <rect x="122" y="70" width="34" height="8" rx="4" fill="#cdbfea"/>
+  <rect x="122" y="86" width="40" height="5" rx="2.5" fill="#d9cdbd"/>
+  <!-- Verbindungslinien zwischen gleichen Angaben -->
+  <path d="M182 74 C214 74 214 64 238 64 M182 74 C214 74 214 110 238 110 M182 74 C214 74 214 154 238 154" stroke="#7b64b4" stroke-width="2.5" fill="none" stroke-dasharray="5 5"/>
+  <!-- Prüfstatus je Dokument -->
+  <rect x="238" y="50" width="66" height="28" rx="8" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <circle cx="254" cy="64" r="8" fill="#55684a"/><path d="M250 64 l3 3 5 -6" stroke="#fbf8f3" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <rect x="268" y="61" width="28" height="5" rx="2.5" fill="#d9cdbd"/>
+  <rect x="238" y="96" width="66" height="28" rx="8" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <circle cx="254" cy="110" r="8" fill="#55684a"/><path d="M250 110 l3 3 5 -6" stroke="#fbf8f3" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <rect x="268" y="107" width="28" height="5" rx="2.5" fill="#d9cdbd"/>
+  <rect x="238" y="140" width="66" height="28" rx="8" fill="#ebe4f6" stroke="#7b64b4" stroke-width="2"/>
+  <circle cx="254" cy="154" r="8" fill="#7b64b4"/><path d="M254 149 v5 M254 158 v.5" stroke="#fbf8f3" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="268" y="151" width="28" height="5" rx="2.5" fill="#cdbfea"/>
+</svg>

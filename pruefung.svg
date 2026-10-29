@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Illustration: Medizingerät, Tablet mit Prüfprotokoll und Kalender mit Prüffrist">
+  <!-- Holztisch -->
+  <rect x="10" y="168" width="300" height="16" rx="6" fill="#c9a27e"/>
+  <path d="M20 174 q80 5 150 0 t130 2" stroke="#b18a64" stroke-width="1.5" fill="none"/>
+  <!-- Gerät -->
+  <rect x="26" y="70" width="112" height="98" rx="12" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <rect x="38" y="82" width="88" height="46" rx="6" fill="#3a302a"/>
+  <path d="M44 110 h14 l6 -14 l8 26 l6 -12 h10 l4 -6 l4 6 h20" stroke="#a9b89a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="50" cy="146" r="7" fill="#c9a27e"/><circle cx="72" cy="146" r="7" fill="#c9a27e"/>
+  <rect x="90" y="140" width="34" height="12" rx="6" fill="#ebe4f6" stroke="#7b64b4" stroke-width="1.5"/>
+  <!-- Tablet mit Checkliste -->
+  <rect x="150" y="48" width="86" height="120" rx="12" fill="#3a302a"/>
+  <rect x="158" y="58" width="70" height="100" rx="6" fill="#fbf8f3"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="166" y="70" width="12" height="12" rx="3" fill="#55684a"/><path d="M169 76 l3 3 5 -6" stroke="#fbf8f3" stroke-width="2" fill="none"/>
+    <rect x="184" y="73" width="36" height="5" rx="2.5" fill="#d9cdbd"/>
+    <rect x="166" y="92" width="12" height="12" rx="3" fill="#55684a"/><path d="M169 98 l3 3 5 -6" stroke="#fbf8f3" stroke-width="2" fill="none"/>
+    <rect x="184" y="95" width="30" height="5" rx="2.5" fill="#d9cdbd"/>
+    <rect x="166" y="114" width="12" height="12" rx="3" fill="none" stroke="#7b64b4" stroke-width="2"/>
+    <rect x="184" y="117" width="34" height="5" rx="2.5" fill="#d9cdbd"/>
+    <path d="M168 144 c6 -8 10 6 16 -2 s10 4 16 -2" stroke="#7a5233" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Kalender -->
+  <rect x="248" y="70" width="58" height="62" rx="8" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <rect x="248" y="70" width="58" height="16" rx="8" fill="#7b64b4"/><rect x="248" y="80" width="58" height="6" fill="#7b64b4"/>
+  <path d="M262 64 v12 M292 64 v12" stroke="#7a5233" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#d9cdbd"><circle cx="262" cy="98" r="3"/><circle cx="277" cy="98" r="3"/><circle cx="292" cy="98" r="3"/><circle cx="262" cy="114" r="3"/><circle cx="292" cy="114" r="3"/></g>
+  <circle cx="277" cy="114" r="7" fill="none" stroke="#7b64b4" stroke-width="2.5"/>
+  <!-- Pflanze -->
+  <rect x="268" y="146" width="22" height="22" rx="4" fill="#7a5233"/>
+  <path d="M279 146 c-2 -14 -14 -18 -18 -26 c10 0 18 10 18 26 c0 -14 8 -22 18 -26 c-2 10 -10 16 -18 26" fill="#a9b89a" stroke="#55684a" stroke-width="1.5"/>
+</svg>

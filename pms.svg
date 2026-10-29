@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Illustration: Rückmeldungen aus mehreren Quellen werden gebündelt und als Trend dargestellt">
+  <!-- Quellen: Nachrichten, Tabelle, Werkzeug -->
+  <rect x="22" y="26" width="64" height="40" rx="10" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <path d="M36 74 l8 -8 h10" fill="#fbf8f3" stroke="#7a5233" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="34" y="38" width="38" height="5" rx="2.5" fill="#cdbfea"/><rect x="34" y="50" width="28" height="5" rx="2.5" fill="#d9cdbd"/>
+  <rect x="22" y="86" width="64" height="44" rx="8" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <path d="M22 100 H86 M22 114 H86 M44 86 V130 M66 86 V130" stroke="#d9cdbd" stroke-width="1.5"/>
+  <rect x="22" y="148" width="64" height="36" rx="10" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <path d="M40 172 l14 -14 m-3 -3 a7 7 0 1 1 9 9" stroke="#55684a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Zuflüsse -->
+  <path d="M90 46 C120 46 118 96 140 100 M90 108 H140 M90 166 C120 166 118 116 140 112" stroke="#c9a27e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Holz-Trichter -->
+  <path d="M140 80 H186 L172 106 V128 H154 V106 Z" fill="#c9a27e" stroke="#7a5233" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M146 86 q18 4 34 0" stroke="#b18a64" stroke-width="1.5" fill="none"/>
+  <path d="M163 128 V144 C163 152 170 156 182 156 H200" stroke="#7a5233" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Trenddiagramm -->
+  <rect x="200" y="54" width="102" height="122" rx="10" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <path d="M214 160 H290 M214 160 V68" stroke="#3a302a" stroke-width="2" stroke-linecap="round"/>
+  <g fill="#a9b89a"><rect x="222" y="132" width="12" height="28" rx="2"/><rect x="240" y="124" width="12" height="36" rx="2"/><rect x="258" y="128" width="12" height="32" rx="2"/></g>
+  <rect x="276" y="96" width="12" height="64" rx="2" fill="#7b64b4"/>
+  <circle cx="282" cy="82" r="8" fill="#ebe4f6" stroke="#7b64b4" stroke-width="2"/>
+  <path d="M282 77 v5 M282 86 v.5" stroke="#7b64b4" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

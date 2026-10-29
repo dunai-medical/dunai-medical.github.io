@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Illustration: Messreihe mit Ausgleichsgerade auf einem Holzklemmbrett und ein Bericht">
+  <!-- Klemmbrett aus Holz -->
+  <rect x="38" y="22" width="170" height="160" rx="12" fill="#c9a27e"/>
+  <path d="M46 40 q60 8 150 0 M46 70 q70 10 150 2 M46 110 q55 -8 150 4 M46 150 q80 9 150 -2" stroke="#b18a64" stroke-width="2" fill="none" opacity=".7"/>
+  <rect x="96" y="14" width="54" height="18" rx="6" fill="#7a5233"/>
+  <rect x="52" y="40" width="142" height="128" rx="6" fill="#fbf8f3"/>
+  <!-- Achsen und Gitter -->
+  <path d="M68 150 H182 M68 150 V56" stroke="#3a302a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M68 126 H182 M68 102 H182 M68 78 H182" stroke="#e3d8c8" stroke-width="1.5"/>
+  <!-- Ausgleichsgerade -->
+  <path d="M72 144 L178 66" stroke="#7b64b4" stroke-width="3" stroke-linecap="round"/>
+  <!-- Messpunkte -->
+  <g fill="#55684a">
+    <circle cx="80" cy="140" r="4.5"/><circle cx="96" cy="126" r="4.5"/><circle cx="112" cy="119" r="4.5"/>
+    <circle cx="128" cy="103" r="4.5"/><circle cx="144" cy="94" r="4.5"/><circle cx="160" cy="80" r="4.5"/><circle cx="174" cy="71" r="4.5"/>
+  </g>
+  <!-- Bericht -->
+  <rect x="214" y="58" width="76" height="100" rx="8" fill="#fbf8f3" stroke="#7a5233" stroke-width="2"/>
+  <rect x="226" y="72" width="40" height="6" rx="3" fill="#7b64b4"/>
+  <rect x="226" y="88" width="52" height="5" rx="2.5" fill="#d9cdbd"/>
+  <rect x="226" y="100" width="46" height="5" rx="2.5" fill="#d9cdbd"/>
+  <rect x="226" y="112" width="50" height="5" rx="2.5" fill="#d9cdbd"/>
+  <circle cx="264" cy="138" r="11" fill="#55684a"/>
+  <path d="M258 138 l4.5 4.5 8 -9" stroke="#fbf8f3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Blatt -->
+  <path d="M286 176 c-20 -2 -30 -18 -24 -36 c18 4 30 18 24 36z" fill="#a9b89a"/>
+  <path d="M286 176 c-8 -12 -14 -22 -24 -36" stroke="#55684a" stroke-width="1.5" fill="none"/>
+</svg>
