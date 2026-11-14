@@ -22,7 +22,7 @@
 <div class="wrap">
   <div class="topic-hero">
     <div>
-      <span class="status wip">8 Zertifikate, Demo in Arbeit</span>
+      <span class="status done">8 Zertifikate, Beleg: MCP-Server</span>
       <h1 style="margin-top:.6rem">KI-Arbeitsabläufe mit Claude einrichten</h1>
       <p class="lead">Ich richte Claude so ein, dass Ihr Team wiederkehrende Aufgaben schneller erledigt, und verbinde es bei Bedarf mit Ihren eigenen Daten.</p>
     </div>
@@ -47,7 +47,7 @@
 
   <section class="block">
     <h2>Meine Rolle</h2>
-    <p>Ich habe acht Kurse der Anthropic Academy abgeschlossen, darunter Claude Code in Action, Introduction to Model Context Protocol, MCP: Advanced Topics und AI Fluency for Small Businesses. Mein Projekt biosignal-gdt habe ich mit Claude Code entwickelt.</p>
+    <p>Ich habe acht Kurse der Anthropic Academy abgeschlossen, darunter Claude Code in Action, Introduction to Model Context Protocol, MCP: Advanced Topics und AI Fluency for Small Businesses. Mein Projekt biosignal-gdt habe ich mit Claude Code entwickelt, für die messdaten-pipeline habe ich mit Claude einen MCP-Server umgesetzt (siehe unten).</p>
     <div class="split">
       <div class="box"><h3>Das übernehme ich</h3><ul><li>Einrichtung und Dokumentation</li><li>MCP-Anbindung eigener Daten</li><li>Einführung für das Team</li></ul></div>
       <div class="box yours"><h3>Das bleibt bei Ihnen</h3><ul><li>Entscheidung, welche Daten die KI sehen darf</li><li>Fachliche Prüfung aller KI-Ergebnisse</li><li>Interne Regeln und Datenschutz</li></ul></div>
@@ -60,8 +60,16 @@
   </section>
 
     <section class="block">
-      <h2>Stand</h2>
-      <p>Ein MCP-Server für die Messdaten-Pipeline ist in Arbeit. Keine Verarbeitung von Patientendaten.</p>
+      <h2>Projekt: MCP-Server für die messdaten-pipeline</h2>
+      <p><strong>Idee.</strong> Claude soll Messreihen nicht selbst ausrechnen, sondern eine geprüfte Auswertung aufrufen. Ein Sprachmodell kann sich verrechnen; das Werkzeug rechnet immer gleich und ist getestet. Claude versteht die Frage und erklärt das Ergebnis, die Pipeline rechnet.</p>
+      <p><strong>Umsetzung.</strong> Ein MCP-Server gibt Claude sechs Werkzeuge, zum Beispiel „Kalibrierung auswerten“, „Konzentration berechnen“ und „PDF-Bericht erstellen“. Der Server läuft lokal auf dem eigenen Rechner und liest nur Dateien aus einem festgelegten Datenordner; Zugriffe auf andere Pfade werden abgewiesen und sind getestet. Die Rohdaten verlassen den Rechner nicht, an das Sprachmodell gehen nur die Ergebnisse, die ein Werkzeug zurückgibt.</p>
+      <div class="figures">
+        <div><strong>6</strong><span>Werkzeuge für Claude</span></div>
+        <div><strong>lokal</strong><span>Rohdaten bleiben auf dem Rechner</span></div>
+      </div>
+      <p><strong>Was ich daraus gelernt habe.</strong> In der ersten Version fehlte ein Werkzeug für Mischungen zweier Farbstoffe. Claude hat den Gehalt daraufhin mit den vorhandenen Werkzeugen berechnet, gut begründet, aber ohne die nötige Korrektur: 11,7 statt 10,3 µmol/L. Bemerkt hat das nicht das Modell, sondern die fachliche Prüfung. Seitdem gibt es das passende Werkzeug und eine Anweisung an Claude, auf diesen Fall hinzuweisen. Genau deshalb bleibt die fachliche Prüfung beim Menschen.</p>
+      <p class="note">Keine Verarbeitung von Patientendaten. Demonstration mit öffentlichen Daten, kein Medizinprodukt.</p>
+      <p><a href="https://github.com/dunai-medical/messdaten-pipeline">Code und Dokumentation auf GitHub</a></p>
     </section>
   <section class="block">
     <div class="cta">

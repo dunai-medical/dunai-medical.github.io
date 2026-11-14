@@ -22,7 +22,7 @@
 <div class="wrap">
   <div class="topic-hero">
     <div>
-      <span class="status wip">Demo in Arbeit</span>
+      <span class="status done">Beleg: messdaten-pipeline</span>
       <h1 style="margin-top:.6rem">Messdaten auswerten und Prüfberichte erstellen</h1>
       <p class="lead">Ich verwandle wiederkehrende Messauswertungen in ein kleines, geprüftes Python-Werkzeug: Rohdaten rein, Kennwerte und Bericht raus.</p>
     </div>
@@ -47,7 +47,7 @@
 
   <section class="block">
     <h2>Meine Rolle</h2>
-    <p>Ich bringe Messtechnik-Praxis mit: Im Praxismodul habe ich ein multispektrales Photometer weiterentwickelt, die Messdatenübertragung an den PC automatisiert und Messreihen mit RMSE und Linearität in Python ausgewertet.</p>
+    <p>Ich bringe Messtechnik-Praxis mit: Im Praxismodul habe ich ein multispektrales Photometer weiterentwickelt, die Messdatenübertragung an den PC automatisiert und Messreihen mit RMSE und Linearität in Python ausgewertet. Wie das als Werkzeug aussieht, zeigt mein Projekt messdaten-pipeline weiter unten.</p>
     <div class="split">
       <div class="box"><h3>Das übernehme ich</h3><ul><li>Einlesen und Bereinigen der Daten</li><li>Berechnung der Kennwerte mit Tests</li><li>Berichtsvorlage und Dokumentation des Werkzeugs</li></ul></div>
       <div class="box yours"><h3>Das bleibt bei Ihnen</h3><ul><li>Akzeptanzkriterien und Grenzwerte</li><li>Freigabe der Ergebnisse und Berichte</li><li>Einordnung in Ihr Qualitätsmanagement</li></ul></div>
@@ -60,8 +60,17 @@
   </section>
 
     <section class="block">
-      <h2>Stand</h2>
-      <p>Demo „Messdaten-Pipeline“ mit öffentlichen bzw. selbst erzeugten Daten ist in Arbeit, inklusive Anbindung an Claude über einen MCP-Server.</p>
+      <h2>Projekt: messdaten-pipeline</h2>
+      <p><strong>Aufgabe.</strong> UV-Vis-Kalibrierreihen automatisch auswerten: Rohdateien eines Photometers einlesen, Kalibriergerade und Kennwerte berechnen, die Messreihe auf typische Fehler prüfen und einen einheitlichen PDF-Bericht erzeugen.</p>
+      <p><strong>Daten.</strong> Öffentliche Messungen zweier Lebensmittelfarbstoffe (Fast Green FCF, Quinoline Yellow) aus einem Open-Access-Artikel (Taralle et al., Emergent Scientist 2026, Lizenz CC BY 4.0): Kalibrierreihen in Wasser und Standardaddition in einer Mundspülung, die beide Farbstoffe enthält.</p>
+      <p><strong>Vorgehen.</strong> Einlesen uneinheitlicher Gerätedateien, Kalibrierung nach Lambert-Beer mit R², RMSE, Nachweis- und Bestimmungsgrenze, Standardaddition mit Korrektur überlappender Absorptionsbanden. Eine Plausibilitätsprüfung meldet Ausreißer, Sättigung, Drift, vertauschte Proben und doppelte Spektren in drei Stufen: Fehler, Warnung, Hinweis.</p>
+      <div class="figures">
+        <div><strong>7&nbsp;Werte</strong><span>des Artikels nachgerechnet, Abweichung höchstens 3,3&nbsp;%</span></div>
+        <div><strong>53</strong><span>automatische Tests</span></div>
+      </div>
+      <p><strong>Was die Prüfung zusätzlich gefunden hat.</strong> Bei einem Farbstoff flacht die Kalibrierkurve oben ab, obwohl R² = 0,9999 eine perfekte Gerade nahelegt. Der lineare Bereich ist also kleiner als der gemessene. Außerdem ist ein Spektrum im veröffentlichten Datensatz doppelt abgelegt.</p>
+      <p class="note">Grenzen: ein Datensatz, ein Gerät, zwei Farbstoffe. Streuung, Ausreißer und Drift sind mit gekennzeichneten simulierten Daten getestet, weil keine Wiederholmessungen veröffentlicht sind. Die Grenzwerte der Prüfung sind Startwerte, keine Normvorgabe. Demonstration, kein Medizinprodukt.</p>
+      <p><a href="https://github.com/dunai-medical/messdaten-pipeline">Code, Tests und Dokumentation auf GitHub</a></p>
     </section>
   <section class="block">
     <div class="cta">
